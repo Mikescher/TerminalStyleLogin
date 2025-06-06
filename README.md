@@ -43,6 +43,12 @@ Sample session menu:
 * `fontSize`: The size of the font in points ([reference](https://doc.qt.io/qt-5/qml-qtquick-textinput.html#font.pointSize-prop))
 * `foreground`: The colour of the font ([reference](https://doc.qt.io/qt-5/qml-color.html))
 * `background`: The colour of the background (it will fill the entire screen) ([reference](https://doc.qt.io/qt-5/qml-color.html))
+* `echoMode`: How the password-input works (if the password is visible/masked/hidden) ([reference](https://doc.qt.io/archives/qt-5.15/qml-qtquick-textinput.html#echoMode-prop))  
+  Possible Values:
+   * `NoEcho`
+   * `Normal`
+   * `Password`
+   * `PasswordEchoOnEdit`
 
 ## Note for installation
 If you install from this repository, first run the `scripts/build.sh` script to produce a `build` directory, and use the contents of this directory to install.

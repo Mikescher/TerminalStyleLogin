@@ -69,7 +69,15 @@ Column {
 		TermInput {
 			id: passwordInput
 
-			echoMode: TextInput.NoEcho
+			echoMode: {
+				switch (config.echoMode) {
+					case "NoEcho":             return TextInput.NoEcho
+					case "Normal":             return TextInput.Normal
+					case "Password":           return TextInput.Password
+					case "PasswordEchoOnEdit": return TextInput.PasswordEchoOnEdit
+					default:                   return TextInput.NoEcho
+				}
+			}
 			text: ""
 
 			onAccepted: {
